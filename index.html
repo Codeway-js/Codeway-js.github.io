@@ -5,134 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        *{
-            margin: 0 auto;
-        }
-        body {
-            background-color: #988566;
-        }
-        .buttons {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 200px;
-        }
-        .buttons.shake {
-            animation: horizontal-shaking 0.2s 1;
-        }
-        .buttonss {
-            margin-top: 10px;
-            margin-right: 10px;
-            height: 50px;
-            width: 50px;
-        }
-        .all{
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-        }
-        /* .all:nth-child(2){
-            display: flex;
-            justify-content: left;
-            flex-direction: column;
-            align-items: left;
-            
-            flex-shrink: 0
-        } */
-        .info{
-            display: flex;
-            width: 200px;
-            justify-content: space-between;
-            align-items: center;
-            height: 20px;
-        }
-        .textpi{
-            /* margin-right: 100px; */
-            flex-shrink: 0
-        }
-        @keyframes horizontal-shaking {
-            0% {
-                transform: translateX(0)
-            }
-
-            25% {
-                transform: translateX(2px)
-            }
-
-            50% {
-                transform: translateX(-2px)
-            }
-
-            75% {
-                transform: translateX(2px)
-            }
-
-            100% {
-                transform: translateX(0)
-            }
-        }
-        .yellow{
-            color: #FEFF54;
-        }
-        .orange{
-            color: #EE8733;
-        }
-        .pink{
-            color: #E933F6;
-        }
-        .red {
-            color: #E93323;
-        }
-        .cyan {
-            color: #52fff9
-        }
-        .gray{
-            color: #555555;
-        }
-        .white {
-            color:#FFF;
-        }
-        .green {
-            color:#75FB4C;
-        }
-        .magenta {
-            color: #75147B;
-        }
-        .blue {
-            color: #0000F4;
-        }
-        .ligne {
-            display: flex;
-            flex-direction: row;
-            align-items: start;
-            justify-content: start;
-            gap: 10px;
-        }
-        .colors{
-            display: flex;
-            width: min-content;
-            margin: 0 0 0 0;
-        }
-        #seepi {
-            display:none;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .seepic {
-            width: 200px ;
-        }
-        .cseepi {
-            margin: 0 0 0 0;
-        }
-        .pigames {
-            display: flex;
-            width: 100%;
-            align-items: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -177,6 +50,8 @@
             <div id="pigame" class="pigames">
 
                 <input type="button" value="voir les décimals de pi" onclick="seepi()">
+                <br>
+                <input type="button" value="ff" onclick="ff()">
             </div>
             <br><br><br>
             <div id="seepi">
