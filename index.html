@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0 auto;
+        }
+        body {
+            background-color: #988566;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+        }
+        .buttons.shake {
+            animation: horizontal-shaking 0.2s 1;
+        }
+        .buttonss {
+            margin-top: 10px;
+            margin-right: 10px;
+            height: 50px;
+            width: 50px;
+        }
+        .all{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* .all:nth-child(2){
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            align-items: left;
+            
+            flex-shrink: 0
+        } */
+        .info{
+            display: flex;
+            width: 200px;
+            justify-content: space-between;
+            align-items: center;
+            height: 20px;
+        }
+        .textpi{
+            /* margin-right: 100px; */
+            flex-shrink: 0
+        }
+        @keyframes horizontal-shaking {
+            0% {
+                transform: translateX(0)
+            }
+
+            25% {
+                transform: translateX(2px)
+            }
+
+            50% {
+                transform: translateX(-2px)
+            }
+
+            75% {
+                transform: translateX(2px)
+            }
+
+            100% {
+                transform: translateX(0)
+            }
+        }
+        .yellow{
+            color: #FEFF54;
+        }
+        .orange{
+            color: #EE8733;
+        }
+        .pink{
+            color: #E933F6;
+        }
+        .red {
+            color: #E93323;
+        }
+        .cyan {
+            color: #52fff9
+        }
+        .gray{
+            color: #555555;
+        }
+        .white {
+            color:#FFF;
+        }
+        .green {
+            color:#75FB4C;
+        }
+        .magenta {
+            color: #75147B;
+        }
+        .blue {
+            color: #0000F4;
+        }
+        .ligne {
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: start;
+            gap: 10px;
+        }
+        .colors{
+            display: flex;
+            width: min-content;
+            margin: 0 0 0 0;
+        }
+        #seepi {
+            display:none;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .seepic {
+            width: 200px ;
+        }
+        .cseepi {
+            margin: 0 0 0 0;
+        }
+        .pigames {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="info">
+            <p id="index"></p>
+            <p id="loose"></p>
+        </div>
+        <div id="textpi" class="textpi">
+            <div>- - - - - - - - - - - - - - - - - - -</div>
+            <div class="ligne" id="t1">.</div>
+            <div class="ligne" id="t2">.</div>
+            <div class="ligne" id="t3">.</div>
+            <div class="ligne" id="t4">.</div>
+            <div class="ligne" id="t5">.</div>
+
+        </div>
+
+        <div class="buttons" id="btns">
+            <div class="layer">
+                <input class="buttonss" type="button" value="7" onclick="b(7)">
+                <input class="buttonss" type="button" value="8" onclick="b(8)">
+                <input class="buttonss" type="button" value="9" onclick="b(9)">
+            </div>
+            <div class="layer">
+                <input class="buttonss" type="button" value="4" onclick="b(4)">
+                <input class="buttonss" type="button" value="5" onclick="b(5)">
+                <input class="buttonss" type="button" value="6" onclick="b(6)">
+            </div>
+            <div class="layer">
+                <input class="buttonss" type="button" value="1" onclick="b(1)">
+                <input class="buttonss" type="button" value="2" onclick="b(2)">
+                <input class="buttonss" type="button" value="3" onclick="b(3)">
+            </div>
+            <div class="layer">
+                <input  class="buttonss" type="button" value="0" onclick="b(0)">
+            </div>
+        </div>
+        <div class="seepic">
+            <br>
+            <br>
+            <div id="pigame" class="pigames">
+
+                <input type="button" value="voir les décimals de pi" onclick="seepi()">
+            </div>
+            <br><br><br>
+            <div id="seepi">
+                <input class="cseepi" type="button" value="précedent" onclick="prec()">
+                <input class="cseepi" type="button" value="suivant" onclick="next()">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
