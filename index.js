@@ -63,45 +63,55 @@ const addnumber = (n) => {
     let classe = ""
     switch (n) {
         case 0:
-            classe = "gray"
+            // gray
+            classe = "555555"
             break
         default:
         case 1:
-            classe = "white"
+            //white
+            classe = "FFF"
             break
         case 2:
-            classe = "yellow"
+            //yellow
+            classe = "FEFF54"
             break
         case 3:
-            classe = "cyan"
+            //cyan
+            classe = "52fff9"
             break
         case 4:
-            classe = "green"
+            //green
+            classe = "75FB4C"
             break
         case 5:
-            classe = "pink"
+        //pink
+            classe = "E933F6"
             break
         case 6:
-            classe = "magenta"
+            //magenta
+            classe = "75147B"
             break
         case 7:
-            classe = "blue"
+            //blue
+            classe = "0000F4"
             break
         case 8:
-            classe = "orange"
+            //orange
+            classe = "EE8733"
             break
         case 9:
-            classe = "red"
+            //red
+            classe = "E93323"
             break
 
     }
     if (li < 10) {
         li += 1
-        document.getElementById("t" + ln).innerHTML += `<p class="${classe} colors"> ${n} </p>`
+        document.getElementById("t" + ln).innerHTML += `<p style="color:#${classe}"> ${n} </p>`
     } else if (ln < 5) {
         ln += 1
         li = 1
-        document.getElementById("t" + ln).innerHTML = `<p class="${classe} colors"> ${n} </p>`
+        document.getElementById("t" + ln).innerHTML = `<p style="color:#${classe}"> ${n} </p>`
     }
     else {
         for (let i = 1; i < 6; i++) {
@@ -109,7 +119,7 @@ const addnumber = (n) => {
         }
         ln = 1
         li = 1
-        document.getElementById("t" + ln).innerHTML = `<p class="${classe} colors"> ${n} </p>`
+        document.getElementById("t" + ln).innerHTML = `<p style="color:#${classe}"> ${n} </p>`
 
     }
 }

@@ -1,9 +1,10 @@
 *{
     margin: 0 auto;
     font-size: x-large;
+    font-family: sans-serif;
 }
 body {
-    background-color: #988566;
+    background-color: #907952;
 }
 .buttons {
     display: flex;
@@ -112,7 +113,7 @@ body {
     justify-content: start;
     gap: 10px;
 }
-.colors{
+#textpi p {
     display: flex;
     width: min-content;
     margin: 0 0 0 0;
